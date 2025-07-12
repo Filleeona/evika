@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import "./Header.css";
+import "../styles/Header.css";
 
 const Header = () => {
   const [language, setLanguage] = useState("RU");
@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       <div className="headerContainer">
         <Link to="/" className="logo">
-          <img src="../src/assets/logo.png" alt="Evika" />
+          <img src="../src/assets/logo.png" alt="Evika logo" />
         </Link>
         <div className="headerOptions">
           <nav className="nav">

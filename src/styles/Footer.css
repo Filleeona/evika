@@ -1,0 +1,119 @@
+.footer {
+  height: auto;
+  background-color: #6a21c6;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin: 0;
+  font-family: "FSElliotPro", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerTop {
+  width: 85%;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerLogo {
+  height: 50px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  flex: 1;
+}
+
+.footerLinks ul {
+  width: 28%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 17px;
+  display: flex;
+  line-height: 1;
+  gap: 3px;
+}
+
+.footerLinks li::before {
+  font-family: "boxicons", sans-serif;
+  content: "\ea50";
+  position: relative;
+  color: #66f3bf;
+}
+
+.footerLinks a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footerLinks a:hover {
+  color: #66f3bf;
+}
+
+.supportTitle {
+  margin: 0 0 15px 0;
+}
+
+.supportRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.footerBottom {
+  width: 85%;
+  height: auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1%;
+}
+
+.footerBottom p {
+  margin: 0;
+}
+
+.footerInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerInfo p {
+  line-height: 1.5;
+}
+
+.footerInfoSmall {
+  height: 65%;
+}
+
+.footerEmail {
+  font-size: 18px;
+}
+
+.footerPayments {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footerPayments img {
+  max-width: 100%;
+  height: auto;
+}
