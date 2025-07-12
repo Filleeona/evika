@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .header {
   position: fixed;
   top: 0;
@@ -58,7 +60,7 @@
 }
 
 .nav a:hover {
-  color: #66f3bf;
+  color: var(--color-hover);
 }
 
 .appButton {
