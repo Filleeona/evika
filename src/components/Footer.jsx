@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,48 +15,48 @@ const Footer = () => {
         <div className="footerLinks">
           <ul>
             <li>
-              <a
-                href="https://www.beltelecom.by/sites/default/files/content/doc/Evika-station-PDF/Rules-to-use-Evika-new.pdf"
+              <Link
+                to="https://www.beltelecom.by/sites/default/files/content/doc/Evika-station-PDF/Rules-to-use-Evika-new.pdf"
                 target="_blank"
               >
                 Правила пользования
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="https://www.beltelecom.by/policy-protection-of-personal-data"
+              <Link
+                to="https://www.beltelecom.by/policy-protection-of-personal-data"
                 target="_blank"
               >
                 Политика РУП &laquo;Белтелеком&raquo; в области обработки и
                 защиты персональных данных
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="https://evika.by/politika-konfidenczialnosti-mobilnogo-prilozheniya-evika"
+              <Link
+                to="https://evika.by/politika-konfidenczialnosti-mobilnogo-prilozheniya-evika"
                 target="_blank"
               >
                 Политика конфиденциальности мобильного приложения Evika!
-              </a>
+              </Link>
             </li>
           </ul>
 
           <ul>
             <li>
-              <a
-                href="https://www.beltelecom.by/sites/default/files/content/doc/Evika-station-PDF/Public-offer-agreement-Evika-2025.pdf"
+              <Link
+                to="https://www.beltelecom.by/sites/default/files/content/doc/Evika-station-PDF/Public-offer-agreement-Evika-2025.pdf"
                 target="_blank"
               >
                 Договор по оказанию услуг
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="https://beltelecom.by/sites/default/files/content/business/additional-services/state-procurements/certificate-of-state-registration-of-RUE-Beltelecom.pdf"
+              <Link
+                to="https://beltelecom.by/sites/default/files/content/business/additional-services/state-procurements/certificate-of-state-registration-of-RUE-Beltelecom.pdf"
                 target="_blank"
               >
                 Свидетельство о государственной регистрации
-              </a>
+              </Link>
             </li>
           </ul>
 
