@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
   const [language, setLanguage] = useState("RU");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleLanguageChange = (e) => {
     setLanguage(e.target.value);
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "headerScrolled" : ""}`}>
       <div className="headerContainer">
         <Link to="/" className="logo">
           <img src="../src/assets/logo.png" alt="Evika logo" />
