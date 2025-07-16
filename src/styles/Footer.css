@@ -2,7 +2,7 @@
 
 .footer {
   height: auto;
-  background-color: var(--color-background);
+  background-color: var(--dark-purple-color);
   color: #fff;
   padding: 1.5rem 0;
   margin: 0;
@@ -51,7 +51,7 @@
   font-family: "boxicons", sans-serif;
   content: "\ea50";
   position: relative;
-  color: var(--color-hover);
+  color: var(--light-green-color);
 }
 
 .footerLinks a {
@@ -61,7 +61,7 @@
 }
 
 .footerLinks a:hover {
-  color: var(--color-hover);
+  color: var(--light-green-color);
 }
 
 .supportTitle {

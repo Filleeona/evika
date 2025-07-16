@@ -69,13 +69,14 @@
 }
 
 .nav a:hover {
-  color: var(--color-hover);
+  color: var(--light-green-color);
 }
 
 .appButton {
   height: 40px;
   padding: 5px 15px;
   font-size: 18px;
+  font-family: "FSElliotPro", sans-serif;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
