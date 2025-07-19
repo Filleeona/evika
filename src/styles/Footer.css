@@ -17,13 +17,14 @@
   width: 85%;
   height: auto;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .footerLogo {
-  height: 50px;
+  height: 60px;
+  padding-bottom: 10px;
 }
 
 .footerLinks {
