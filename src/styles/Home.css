@@ -1,0 +1,293 @@
+#mainContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#hero {
+  width: 130%;
+  position: relative;
+  aspect-ratio: 1901 / 601;
+  margin-left: -15%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin-bottom: 60px;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 100%;
+  aspect-ratio: 1901 / 601;
+  background: linear-gradient(
+    to right,
+    rgba(134, 42, 247, 1) 0%,
+    rgba(0, 235, 149, 1) 100%
+  );
+  z-index: 0;
+  opacity: 0.8;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) rotate(0deg);
+  filter: blur(10px);
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 130%;
+  height: 95%;
+  z-index: 0;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.heroCarousel {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  aspect-ratio: 1901 / 601;
+}
+
+.heroCarousel img {
+  width: 100%;
+  z-index: 900;
+  object-fit: contain;
+  vertical-align: middle;
+  aspect-ratio: 1901 / 601;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features {
+  padding: 60px 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.sectionTitle h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "FSElliotPro Bold", sans-serif;
+  color: #444;
+  font-weight: 400;
+}
+
+.sectionTitle h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.sectionTitle h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--light-purple-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.sectionImage,
+.mapContainer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.sectionImage.visible,
+.mapContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionImage img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.mapContainer,
+.addressesContainer,
+.infoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapFrame {
+  margin-top: 20px;
+  width: 85%;
+}
+
+#map {
+  width: 100%;
+  height: 800px;
+}
+
+.addresses {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.mapRegion {
+  width: 100%;
+}
+
+.mapTitle {
+  font-size: 20px;
+  font-family: "FSElliotPro", sans-serif;
+  color: #444;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    rgba(134, 42, 247, 1) 0%,
+    rgba(0, 235, 149, 1) 100%
+  );
+  padding: 13px 15px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.mapContent {
+  max-height: 0;
+  overflow: hidden;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    rgba(134, 42, 247, 1) 0%,
+    rgba(0, 235, 149, 1) 100%
+  );
+  border-top: none;
+  font-family: "FSElliotPro", sans-serif;
+  font-size: 18px;
+  color: #444;
+  transition: max-height 1s ease-in-out;
+}
+
+.mapContent ul {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0 0 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mapContent li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.mapContent li::before {
+  font-family: "boxicons", sans-serif;
+  content: "\ea50";
+  position: relative;
+  color: #444;
+  line-height: 1;
+}
+
+.mapContent.expanded {
+  max-height: 630px;
+}
+
+.info {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.infoRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoRow li {
+  font-size: 20px;
+  font-family: "FSElliotPro", sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+
+.infoRow i {
+  display: inline-block;
+  position: relative;
+  color: var(--light-purple-color);
+  padding-right: 4px;
+  font-size: 20px;
+}
+
+.bi-check::before {
+  content: "\f26e";
+}
+
+.infoImg {
+  width: 25%;
+}
+
+.infoImg img {
+  width: 95%;
+  height: auto;
+}
+
+.infoText {
+  max-width: 67%;
+}
+
+.infoText ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0 0 0;
+  gap: 10px;
+}
+
+.qrcode {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1366px) {
+  .infoRow li {
+    font-size: 18px;
+  }
+}
