@@ -68,7 +68,8 @@
   transition: color 0.3s;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a:focus {
   color: var(--light-green-color);
 }
 

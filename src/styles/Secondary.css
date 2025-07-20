@@ -1,0 +1,71 @@
+#main {
+  margin-top: 80px;
+}
+
+.breadcrumbs {
+  width: 100%;
+  min-height: 40px;
+  padding: 15px 0;
+  background-color: #f3f8fa;
+  display: flex;
+  justify-content: center;
+}
+
+.crumbsContainer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crumbsContainer h2 {
+  margin: 0;
+  font-size: 28px;
+  font-family: "FSElliotPro Bold", sans-serif;
+  font-weight: 300;
+  color: #444;
+}
+
+.aboutPayment {
+  padding: 60px 0;
+}
+
+.defaultContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row h2 {
+  width: 100%;
+  font-size: 32px;
+  font-family: "FSElliotPro Bold", sans-serif;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+  color: #444;
+}
+
+.row p {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-size: 20px;
+  font-family: "FSElliotPro", sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+
+.row p:last-child {
+  margin-bottom: 0;
+}
+
+.row a {
+  color: #4fa6d5;
+  text-decoration: none;
+}
