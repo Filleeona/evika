@@ -79,3 +79,34 @@
   color: #4fa6d5;
   text-decoration: none;
 }
+
+.additionalContainer {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutContainer {
+  width: 100%;
+  text-align: justify;
+}
+
+.aboutContainer p:first-child {
+  width: 20%;
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.aboutContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.aboutImg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+}
