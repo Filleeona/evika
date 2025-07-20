@@ -153,8 +153,8 @@
   height: 800px;
 }
 
-.addresses {
-  width: 85%;
+.addresses,
+.mapPageContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -162,8 +162,17 @@
   align-items: center;
 }
 
-.mapRegion {
+.addresses {
+  width: 85%;
+}
+
+.mapRegion,
+.mapPageContainer {
   width: 100%;
+}
+
+.mapPageContainer {
+  margin-top: 60px;
 }
 
 .mapTitle {

@@ -1,34 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import stationsData from "../data/chargingStations.json";
+import AddressList from "../components/AddressList";
+import YandexMap from "../components/YandexMap";
 import "../styles/Home.css";
 
 const Home = () => {
-  const mapRef = useRef(null);
-  const [expandedRegions, setExpandedRegions] = useState({});
   const elementsRef = useRef([]);
-
-  useEffect(() => {
-    let map;
-
-    ymaps.ready(() => {
-      if (!mapRef.current) {
-        map = new ymaps.Map("map", {
-          center: [53.7098, 27.9534],
-          zoom: 6,
-          controls: ["zoomControl", "searchControl"],
-        });
-
-        mapRef.current = map;
-      }
-    });
-
-    return () => {
-      if (mapRef.current) {
-        mapRef.current.destroy();
-        mapRef.current = null;
-      }
-    };
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,13 +30,6 @@ const Home = () => {
       });
     };
   }, []);
-
-  const toggleRegion = (region) => {
-    setExpandedRegions((prev) => ({
-      ...prev,
-      [region]: !prev[region],
-    }));
-  };
 
   return (
     <div id="mainContainer">
@@ -91,7 +61,7 @@ const Home = () => {
             ref={(el) => (elementsRef.current[1] = el)}
           >
             <div className="mapFrame">
-              <div id="map"></div>
+              <YandexMap />
             </div>
           </div>
         </div>
@@ -104,27 +74,7 @@ const Home = () => {
           </div>
           <div className="addressesContainer">
             <div className="addresses">
-              {stationsData.map(({ region, stations }) => (
-                <div className="mapRegion" key={region}>
-                  <div
-                    className="mapTitle"
-                    onClick={() => toggleRegion(region)}
-                  >
-                    {region} ({stations.length})
-                  </div>
-                  <div
-                    className={`mapContent ${
-                      expandedRegions[region] ? "expanded" : ""
-                    }`}
-                  >
-                    <ul>
-                      {stations.map((address, index) => (
-                        <li key={index}>{address}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
+              <AddressList stationsData={stationsData} />
             </div>
           </div>
         </div>

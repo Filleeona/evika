@@ -9,7 +9,7 @@ const Payment = () => {
           <h2>Оплата</h2>
         </div>
       </div>
-      <div className="aboutPayment">
+      <div className="mainContainer">
         <div className="defaultContainer">
           <div className="row">
             <h2>Цена</h2>
