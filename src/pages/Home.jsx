@@ -136,7 +136,10 @@ const Home = () => {
         </div>
         <div className="infoContainer">
           <div className="info">
-            <div className="infoRow">
+            <div
+              className="infoRow"
+              ref={(el) => (elementsRef.current[2] = el)}
+            >
               <div className="infoImg">
                 <img src="../src/assets/info1.png" />
               </div>
@@ -167,12 +170,18 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div className="infoRow">
+            <div
+              className="infoRow"
+              ref={(el) => (elementsRef.current[3] = el)}
+            >
               <div className="qrcode">
                 <img src="../src/assets/qr-code.png" />
               </div>
             </div>
-            <div className="infoRow">
+            <div
+              className="infoRow"
+              ref={(el) => (elementsRef.current[4] = el)}
+            >
               <div className="infoText">
                 <ul>
                   <li>
@@ -189,7 +198,10 @@ const Home = () => {
                 <img src="../src/assets/info2.png" />
               </div>
             </div>
-            <div className="infoRow">
+            <div
+              className="infoRow"
+              ref={(el) => (elementsRef.current[5] = el)}
+            >
               <div className="infoImg">
                 <img src="../src/assets/info3.png" />
               </div>
@@ -223,7 +235,10 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div className="infoRow">
+            <div
+              className="infoRow"
+              ref={(el) => (elementsRef.current[6] = el)}
+            >
               <div className="infoText">
                 <ul>
                   <li>
