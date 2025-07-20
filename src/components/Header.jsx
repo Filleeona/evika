@@ -27,11 +27,46 @@ const Header = () => {
         </Link>
         <div className="headerOptions">
           <nav className="nav">
-            <NavLink to="/payment">Оплата</NavLink>
-            <NavLink to="/map">Карта</NavLink>
-            <NavLink to="/about">О нас</NavLink>
-            <NavLink to="/feedback">Обратная связь</NavLink>
-            <NavLink to="/news">Новости</NavLink>
+            <NavLink
+              to="/payment"
+              className={({ isActive }) =>
+                isActive ? "navLink active" : "navLink"
+              }
+            >
+              Оплата
+            </NavLink>
+            <NavLink
+              to="/map"
+              className={({ isActive }) =>
+                isActive ? "navLink active" : "navLink"
+              }
+            >
+              Карта
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "navLink active" : "navLink"
+              }
+            >
+              О нас
+            </NavLink>
+            <NavLink
+              to="/feedback"
+              className={({ isActive }) =>
+                isActive ? "navLink active" : "navLink"
+              }
+            >
+              Обратная связь
+            </NavLink>
+            <NavLink
+              to="/news"
+              className={({ isActive }) =>
+                isActive ? "navLink active" : "navLink"
+              }
+            >
+              Новости
+            </NavLink>
           </nav>
           <button className="appButton">Приложение</button>
           <select
