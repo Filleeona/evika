@@ -2,5 +2,10 @@
   --dark-purple-color: #6a21c6;
   --light-green-color: #66f3bf;
   --light-purple-color: #b680fc;
+  --main-purple-color: #862af7;
   --bs-heading-color: inherit;
+  --label-color: #3f4b5b;
+  --required-color: #b94a48;
+  --border-color: #bfc3c8;
+  --border-color-active: #66afe9;
 }
