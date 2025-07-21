@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "date": "10.07.2025",
+    "title": "Новые станции в Минске!",
+    "url": "https://evika.by/news/novye-stanczii-v-minske/ "
+  },
+  {
+    "id": 2,
+    "date": "19.03.2025",
+    "title": "Быстрые зарядные станции Evika!",
+    "url": "http://evika.by/news/bystrye-zaryadnye-stanczii-evika-zagolovok/ "
+  },
+  {
+    "id": 3,
+    "date": "06.03.2025",
+    "title": "Приложение «Evika!» теперь доступно в Google Play и AppStore",
+    "url": "https://evika.by/news/prilozhenie-evika-teper-dostupno-v-google-play-i-appstore/ "
+  },
+  {
+    "id": 4,
+    "date": "28.02.2025",
+    "title": "Больше заряда – больше бонусов: Evika! запускает акцию",
+    "url": "https://evika.by/news/bolshe-zaryada-bolshe-bonusov-evika-zapuskaet-akcziyu/ "
+  },
+  {
+    "id": 5,
+    "date": "28.02.2025",
+    "title": "Новые тарифы с 1 марта 2025 года",
+    "url": "https://evika.by/news/novye-tarify-s-1-marta-2025-goda/ "
+  },
+  {
+    "id": 6,
+    "date": "29.01.2025",
+    "title": "200 электрозарядных станций: подводим итоги развития сети Evika! в 2024 году",
+    "url": "https://evika.by/news/200-elektrozaryadnyh-stanczij-podvodim-itogi-razvitiya-seti-evika-v-2024-godu/ "
+  },
+  {
+    "id": 7,
+    "date": "16.10.2024",
+    "title": "Evika! подключилась к Оплати: теперь зарядить электромобиль стало еще удобнее",
+    "url": "https://evika.by/news/evika-podklyuchilas-k-oplati-teper-zaryadit-elektromobil-stalo-eshhe-udobnee/ "
+  },
+  {
+    "id": 8,
+    "date": "15.10.2024",
+    "title": "«Белтелеком» примет участие в ENЕRGY EXPO-2024",
+    "url": "https://evika.by/news/beltelekom-primet-uchastie-v-energy-expo-2024/ "
+  },
+  {
+    "id": 9,
+    "date": "01.08.2024",
+    "title": "200 станций Evika! будут работать в Беларуси к концу 2024 года",
+    "url": "https://evika.by/news/200-stanczij-evika-budut-rabotat-v-belarusi-k-konczu-2024-goda/ "
+  },
+  {
+    "id": 10,
+    "date": "31.07.2024",
+    "title": "Новые функции «Забронировать» и «Стать в очередь» в приложении Evika!",
+    "url": "https://evika.by/news/novye-funkczii-zabronirovat-i-stat-v-ochered-v-prilozhenii-evika/ "
+  }
+]
